@@ -1,7 +1,7 @@
 import ContactList from "./ContactList";
 import React from "react";
 
-export default function ContactRow({ contact, setSelectedContentID }) {
+export default function ContactRow({ contact, setSelectedContactID }) {
     return (
         <tr
         onClick={() => {
