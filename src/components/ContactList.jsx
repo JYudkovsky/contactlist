@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import ContactRow from "./ContactRow";
-import { useEffect } from "react";
 
 
 
@@ -21,7 +20,7 @@ export default function ContactList(){
           try {
            const response = await fetch("https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users");
            const result = await response.json ();
-           setContracts(result);
+           setContacts(result);
           } catch (error) {
             console.error(error);//this will catch if there is an error and console log it.
           }
@@ -48,5 +47,5 @@ console.log ("contacts");
                 
             </tbody>
         </table>
-};
+);
 }
